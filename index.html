@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRIGHTcoding - Flexbox</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img class="logo1" src="c:\Users\USER\Downloads\patterncoding logo.png" alt="">
+    <span>BRIGHTcoding</span>
+    </div>
+<button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+ 
+  <nav class="menu">
+    <a href="#"><span>📖</span> Learn</a>
+    <a href="#"><span>👥</span> Mentorship</a>
+    <a href="#"><span>🏷️</span> Pricing</a>
+    <a href="#">Resources ▾</a>
+    <a href="#">Company ▾</a>
+  </nav>
+
+  <div class="right"><span>↻</span><div class="user"><img class="one"src="c:\Users\USER\Pictures\WhatsApp Image 2026-09-29 at 12.37.07 AM.jpeg" alt="">  </div></div>
+<div class="btn3">
+    <button>Login</button>
+    </div>
+<div class="btn4">
+    <button>Sign up</button>
+    </div>
+  <div class="btn5">
+      <button>Get Started→</button>
+    </div>
+</header>
+
+<div class="main">
+  <div class="top"><h2>Course List</h2><a href="#">View All →</a></div>
+
+  <div class="course-list">
+    <div class="course-card">
+      <img src="c:\Users\USER\Downloads\1image.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Frontend Development</h3><span class="badge">Premium</span><span class="price">₦29.99</span></div>
+        <div class="meta"><span>12 courses</span><span>309 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\Downloads\2image.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Frontend Interview Mastery</h3><span class="badge">Premium</span><span class="price">₦69.99</span></div>
+        <div class="meta"><span>5 courses</span><span>28 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\Downloads\3image.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Full Stack Development</h3><span class="badge">Premium</span><span class="price">₦59.99</span></div>
+        <div class="meta"><span>1 courses</span><span>53 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\Downloads\4image.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Python Programming</h3><span class="badge">Premium</span><span class="price">₦19.99</span></div>
+        <div class="meta"><span>4 courses</span><span>170 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\Downloads\5image.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Data Science</h3><span class="badge">Premium</span><span class="price">₦49.99</span></div>
+        <div class="meta"><span>5 courses</span><span>155 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\Downloads\8image.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Backend Development</h3><span class="badge">Premium</span><span class="price">₦39.99</span></div>
+        <div class="meta"><span>9 courses</span><span>252 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<style>
+* { 
+ box-sizing:border-box;
+ font-family: Inter, Arial, sans-serif;
+}
+body {
+ background:#f5f7fb;
+}
+
+/* === NAVBAR - THE ONE YOU MARKED GREEN === */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 28px;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  cursor: pointer;
+}
+.one{
+  width: 25px;
+  border-radius: 15px;
+}
+.btn {
+    display: flex;
+    border: none;
+    gap: 10px;
+}
+.btn button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+.btn3{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  gap:5px ;
+  display:flex; 
+  text-align:center; 
+  background:#111; 
+  color:#fff;
+  padding:11px; 
+  border-radius:10px; 
+  text-decoration:none; 
+  font-size:13px; 
+  font-weight:600; 
+  margin-top:12px;
+}
+.btn3:hover{ 
+  background:#ff8c00;
+}
+.btn4{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  gap:5px ;
+  display:flex; 
+  text-align:center; 
+  background:#111; 
+  color:#fff;
+  padding:11px; 
+  border-radius:10px; 
+  text-decoration:none; 
+  font-size:13px; 
+  font-weight:600; 
+  margin-top:12px;
+}
+.btn4:hover{ 
+  background:#ff8c00;
+}
+.btn5{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  gap:2px ;
+  display:flex; 
+  text-align:center; 
+  background:#111; 
+  color:#2563eb;
+  padding:11px; 
+  border-radius:10px; 
+  text-decoration:none; 
+  font-size:13px; 
+  font-weight:600; 
+  margin-top:12px;
+}
+.btn5:hover{ 
+  background:#ff8c00;
+  cursor: pointer;
+}
+.menu-toggle {
+  display: none;
+}
+  /* Show the hamburger */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    order: 2;
+  }
+  .menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+  }
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:800; 
+  color:blue;
+  font-size:18px;
+}
+.logo1{
+    height: 40px;
+}
+.logo-icon{
+  width:28px;
+  height:28px;
+  background:#111;
+  color:#ff5a5a;
+  border-radius:50%; 
+  display:flex; 
+  align-items:center;
+  justify-content:center;
+}
+.menu{
+  display:flex;
+  gap:26px; 
+  align-items:center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu a{
+  text-decoration:none;
+  color:#374151;
+  font-size:14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu a:hover{
+  color: #ff5a5a;
+  transform: translate(-2px);
+}
+.right{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+.user{
+  background:#111; 
+  color:#fff; 
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+}
+
+/* === COURSE LIST - FLEXBOX === */
+.main{
+     padding:30px;
+     max-width:1250px;
+     margin:0 auto; }
+.top{
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  margin-bottom:20px;
+}
+.top h2{ 
+  font-size:20px;
+  color: #fff; 
+}
+.top a{
+  font-size:13px; 
+  color:#2563eb;
+  text-decoration:none;
+}
+
+.course-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:22px;
+  justify-content:flex-start;
+}
+
+.course-card{
+  flex:1 1 320px;
+  max-width:380px;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+.course-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;transition:
+  all 0.5s ease; 
+  cursor:pointer;
+}
+.course-card:hover{
+ transform: scale(1.1);
+}
+.card-body{
+  padding:16px; 
+}
+.title-row{
+  display:flex;
+  gap:8px;
+  align-items:center; 
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+.title-row h3{ 
+  font-size:14px;
+  flex:1;
+}
+.badge{
+  font-size:10px;
+  padding:4px 8px; 
+  border-radius:20px;
+  background:#e0ecff;
+  color:#2563eb;
+  font-weight:600;
+}
+.price{ 
+    font-size:10px; 
+    padding:4px 8px;
+    border-radius:20px;
+    background:#f3f4f6;
+    font-weight:600;
+}
+.meta, .progress{
+  display:flex;
+  justify-content:space-between;
+  font-size:11px; color:#6b7280;
+  margin-bottom:10px;
+}
+.btn{
+  display:block; 
+  text-align:center; 
+  background:#2563eb;
+  color:#fff;
+  padding:11px; 
+  border-radius:10px;
+  text-decoration:none;
+  font-size:13px; 
+  font-weight:600;
+  margin-top:12px;
+}
+.btn:hover{ 
+ background:#1d4ed8;
+}
+</style>
+
+<style>
+* { margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: Inter, Arial, sans-serif;
+}
+body { 
+  background:#f5f7fb;
+}
+
+/* === NAVBAR - THE ONE YOU MARKED GREEN === */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 28px;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+}
+.logo{
+  display:flex; 
+  align-items:center;
+  gap:8px;
+  font-weight:800; 
+  color:#1e40af; 
+  font-size:18px;
+}
+.logo-icon{
+  width:28px;
+  height:28px; 
+  background:#111; 
+  color:#ff5a5a;
+  border-radius:50%; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center;
+}
+.menu{
+  display:flex; 
+  gap:26px; 
+  align-items:center;
+}
+.menu a{
+  text-decoration:none; 
+  color:#f3f4f6; 
+  font-size:14px;
+}
+.right{
+  display:flex; 
+  gap:14px; 
+  align-items:center;
+  background-color: #111;
+  color: #fff;
+}
+.user{
+  background:#fff; 
+  color:#fff; 
+  width:32px; 
+  height:32px;
+  border-radius:50%; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  font-size:11px;
+}
+
+/* === COURSE LIST - FLEXBOX === */
+.main{ 
+  padding:30px; 
+  max-width:1250px; 
+  margin:0 auto; 
+}
+.top{
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  margin-bottom:20px;
+}
+.top h2{ 
+  font-size:20px; 
+}
+.top a{ 
+  font-size:13px; 
+  color:#2563eb; 
+  text-decoration:none; 
+}
+
+.course-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:22px;
+  justify-content:flex-start;
+}
+
+.course-card{
+  flex:1 1 320px;
+  max-width:380px;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+.course-card img{
+  width:100%; 
+  height:180px; 
+  object-fit:cover; 
+  display:block;
+}
+.card-body{ 
+  padding:16px; 
+}
+.title-row{
+  display:flex; 
+  gap:8px; 
+  align-items:center; 
+  flex-wrap:wrap; 
+  margin-bottom:12px;
+}
+.title-row h3{ 
+  font-size:14px; 
+  flex:1; 
+}
+.badge{
+  font-size:10px; 
+  padding:4px 8px; 
+  border-radius:20px; 
+  background:#e0ecff; 
+  color:#2563eb; 
+  font-weight:600;
+}
+.price{ 
+  font-size:10px; 
+  padding:4px 8px; 
+  border-radius:20px; 
+  background:#f3f4f6; 
+  font-weight:600;
+}
+.meta, .progress{
+  display:flex; 
+  justify-content:space-between; 
+  font-size:11px; 
+  color:#6b7280; 
+  margin-bottom:10px;
+}
+.btn{
+  display:block; 
+  text-align:center; 
+  background:#2563eb; 
+  color:#fff;
+  padding:11px; 
+  border-radius:10px; 
+  text-decoration:none; 
+  font-size:13px; 
+  font-weight:600; 
+  margin-top:12px;
+}
+.btn:hover{ 
+  background:#1d4ed8; 
+  }
+</style>
+
+<div class="main">
+  <div class="course-list">
+    <div class="course-card">
+      <img src="c:\Users\USER\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\8EC3696743F1DA3231A1C82F2FC4B9D2CFB4FB4C\transfers\2026-44\WhatsApp Image 2026-11-03 at 11.01.20 PM.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Ai Development</h3><span class="badge">Premium</span><span class="price">₦89.99</span></div>
+        <div class="meta"><span>85 courses</span><span>509 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\8EC3696743F1DA3231A1C82F2FC4B9D2CFB4FB4C\transfers\2026-44\WhatsApp Image 2026-11-03 at 11.06.14 PM.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Software Engineer</h3><span class="badge">Premium</span><span class="price">₦98.99</span></div>
+        <div class="meta"><span>16 courses</span><span>43 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="c:\Users\USER\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\8EC3696743F1DA3231A1C82F2FC4B9D2CFB4FB4C\transfers\2026-44\WhatsApp Image 2026-11-03 at 11.10.27 PM.jpeg">
+      <div class="card-body">
+        <div class="title-row"><h3>Data Analysis</h3><span class="badge">Premium</span><span class="price">₦69.99</span></div>
+        <div class="meta"><span>12 courses</span><span>534 topics</span></div>
+        <div class="progress"><span>Not started</span><span>0%</span></div>
+        <a class="btn" href="#">🛒 Subscribe Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,Arial,sans-serif;
+}
+body{
+  background: #122;
+}
+.flex-list{
+  display:flex;        /* Same */
+  flex-wrap:wrap;      /* Same */
+  gap:24px;            /* Same */
+  justify-content:center;
+}
+
+.project-card{
+  flex:1 1 340px;      /* Same moving logic as course cards */
+  cursor:pointer;
+  transition:all 0.4s ease;
+}
+.project-card:hover{
+  transform:translateY(-8px) scale(1.02); /* Moves when hover */
+}
+.thumb img:hover{
+  transform:scale(1.1); /* Image zooms */
+}
+.view:hover{
+  transform:translateX(6px); /* View Details slides right */
+}
+
+/* === NAVBAR === */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 28px;
+  background:#111;
+  border-bottom:1px solid #fff;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:800;
+  color:#ff8c00;
+  font-size:18px;
+  cursor:pointer;
+}
+.logo-icon{
+  width:28px;
+  height:28px;
+  background:#111;
+  color:#ff5a5a;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.menu{display:flex;
+  gap:26px;
+  align-items:center;
+}
+.menu a{
+  text-decoration:none;
+  color:#f3f4f6;
+  font-size:14px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  position:relative;
+  padding:6px 2px;}
+.menu a:hover{
+  color:#ff8c00;
+  transform:translateY(-2px);
+}
+.menu a::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0%;
+  height:2px;
+  background:#ff8c00;
+  transition:width 0.3s;
+}
+.menu a:hover::after{
+  width:100%;
+}
+.right{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  cursor:pointer;
+}
+.user{
+  background:#fff;
+  color:#fff;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  transition:0.3s;
+}
+.user:hover{
+  transform:scale(1.1);
+}
+
+/* === SHARED HEADER === */
+.section{
+  max-width:1250px;
+  margin:0 auto;
+  padding:40px 30px;
+}
+.section-header{
+  text-align:center;
+  margin-bottom:30px;
+}
+.section-header h2{
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:8px;
+  color: #fff;
+}
+.section-header p{
+  font-size:14px;
+  color:#fff;
+}
+
+/* === COURSE LIST + PROJECT LIST - SAME FLEXBOX === */
+.flex-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  justify-content:center;
+}
+
+/* === PROJECT CARD - YOUR NEW IMAGE === */
+.project-card{
+  flex:1 1 340px;
+  max-width:390px;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,0.06);
+  cursor:pointer;
+  transition:all 0.4s ease;
+  display:flex;
+  flex-direction:column;
+}
+.project-card:hover{
+  transform:translateY(-8px) scale(1.02);
+  box-shadow:0 18px 40px rgba(0,0,0,0.14);
+}
+
+.thumb{
+  position:relative;
+  height:210px;
+  overflow:hidden;
+}
+.thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:all 0.5s ease;
+}
+.project-card:hover .thumb img{
+  transform:scale(1.1);
+  filter:brightness(1.05);
+}
+.tag{
+  position:absolute;
+  top:12px;left:12px;
+  background:#38bdf8;
+  color:#fff;
+  font-size:11px;
+  padding:4px 10px;
+  border-radius:6px;
+  font-weight:600;
+}
+.heart{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background:rgba(255,255,255,0.9);
+  font-size:11px;
+  padding:4px 8px;
+  border-radius:20px;
+  display:flex;
+  gap:4px;
+  align-items:center;
+}
+.price-badge{
+  position:absolute;
+  bottom:12px;
+  left:12px;
+  background:rgba(0,0,0,0.75);
+  color:#fff;
+  font-size:11px;
+  padding:5px 10px;
+  border-radius:8px;
+  font-weight:600;
+}
+
+.card-info{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.card-info h3{
+  font-size:16px;
+  margin-bottom:6px;
+}
+.card-info p{
+  font-size:12px;
+  color:#6b7280;
+  line-height:1.5;
+  margin-bottom:12px;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.stats{
+  display:flex;
+  gap:12px;
+  font-size:11px;
+  color:#6b7280;
+  margin-bottom:10px;
+}
+.tech{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:14px;
+}
+.tech span{
+  font-size:10px;
+  background:#f3f4f6;
+  padding:4px 8px;
+  border-radius:20px;
+  color:#374151;
+}
+
+.view{
+  margin-top:auto;
+  font-size:13px;
+  color:#2563eb;
+  text-decoration:none;
+  font-weight:600;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  display:inline-block;
+}
+.view:hover{
+  transform:translateX(6px);
+  color:#1d4ed8;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .menu{display:none;}
+  .flex-list{flex-direction:column;align-items:center;}
+  .project-card{max-width:100%;}
+}
+
+/* === THE END === */
+.end-section{
+  display:flex; /* FLEXBOX */
+  flex-direction:column; /* Stack vertically */
+  align-items:center; /* Center horizontally */
+  justify-content:center; /* Center vertically */
+  gap:18px;
+  padding:80px 20px;
+  background:#f8fafc;
+  text-align:center;
+}
+
+.btn-all{
+  background:#1e40af;
+  color:#fff;
+  padding:12px 24px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all 0.3s ease; /* Makes it move */
+  display:flex;
+  align-items:center;
+  gap:6px;
+  box-shadow:0 4px 15px rgba(30,64,175,0.3);
+}
+.btn-all:hover{
+  background:#1e3a8a;
+  transform:translateY(-3px) scale(1.05); /* Moves up */
+  box-shadow:0 10px 25px rgba(30,64,175,0.4);
+}
+.btn-all:active{transform:scale(0.96);}
+
+.badge-end{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1px;
+  color:#374151;
+  margin-top:40px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+.badge-end:hover{transform:scale(1.05);box-shadow:0 4px 15px rgba(0,0,0,0.08);}
+.dot{width:8px;height:8px;background:#2563eb;border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,99,235,0.7)}70%{box-shadow:0 0 0 8px rgba(37,99,235,0)}100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}}
+
+.everything h2{
+  font-size:48px;
+  font-weight:900;
+  color:#111;
+  line-height:1.1;
+  letter-spacing:-1px;
+}
+.everything p{
+  font-size:15px;
+  color:#6b7280;
+  max-width:520px;
+  margin-top:12px;
+  line-height:1.5;
+}
+
+@media(max-width:900px){
+  .menu{display:none;}
+  .flex-list{flex-direction:column;align-items:center;}
+  .everything h2{font-size:34px;}
+}
+/* === FOOTER - FLEXBOX === */
+.footer{
+  background:#0f172a;
+  color:#fff;
+  padding:60px 30px 20px;
+  margin-top:40px;
+}
+.footer-top{
+  display:flex; /* FLEXBOX */
+  flex-wrap:wrap;
+  gap:40px;
+  justify-content:space-between;
+  max-width:1250px;
+  margin:0 auto;
+  padding-bottom:40px;
+  border-bottom:1px solid #1e293b;
+}
+.footer-col{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  flex:1 1 160px;
+  min-width:160px;
+}
+.footer-col.brand{
+  flex:1 1 280px;
+  max-width:300px;
+}
+.footer-col h4{
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+.footer-col p{
+  font-size:13px;
+  color:#94a3b8;
+  line-height:1.6;
+}
+.footer-col a{
+  font-size:13px;
+  color:#94a3b8;
+  text-decoration:none;
+  cursor:pointer;
+  transition:all 0.3s ease; /* Moving */
+}
+.footer-col a:hover{
+  color:#fff;
+  transform:translateX(5px); /* Moves right */
+}
+
+.socials{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+.socials a{
+  width:36px;height:36px;
+  background:#1e293b;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  color:#fff;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+.socials a:hover{
+  background:#2563eb;
+  transform:translateY(-4px) scale(1.1); /* Moves up */
+}
+
+.newsletter-box{
+  display:flex;
+  gap:0;
+  background:#1e293b;
+  border-radius:10px;
+  overflow:hidden;
+  padding:4px;
+}
+.newsletter-box input{
+  flex:1;
+  background:transparent;
+  border:none;
+  outline:none;
+  color:#fff;
+  padding:10px;
+  font-size:13px;
+  min-width:0;
+}
+.newsletter-box button{
+  background:#2563eb;
+  border:none;
+  color:#fff;
+  padding:0 16px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+  transition:all 0.3s ease;
+}
+.newsletter-box button:hover{
+  background:#1d4ed8;
+  transform:scale(1.08);
+}
+
+/* === FOOTER === */
+.footer-real{
+  background:#0a0a0f;
+  color:#fff;
+  padding:50px 40px 20px;
+  font-family:Inter,Arial,sans-serif;
+}
+.footer-real-top{
+  display:flex; /* FLEXBOX */
+  flex-wrap:wrap;
+  gap:50px;
+  justify-content:space-between;
+  max-width:1650px;
+  margin:0 auto;
+}
+.f-brand{
+  flex:1 1 320px;
+  max-width:880px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+.f-logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:22px;
+  font-weight:800;
+  color:#ff8c00;
+  cursor:pointer;
+  transition:0.3s;
+}
+.f-logo:hover{
+  transform:translateY(-2px);
+}
+.f-logo-icon{
+  background:#ff8c00;
+  color:#000;
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  font-weight:900;
+}
+.f-brand p{
+  font-size:13px;
+  color:#9ca3af;
+  line-height:1.7;
+}
+.f-tag{
+  font-size:10px;
+  letter-spacing:2px;
+  color:#9ca3af;
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+.f-tag span{
+  color:#ff8c00;
+}
+.f-socials{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.f-socials a{
+  width:34px;
+  height:34px;
+  background:#1f2937;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:13px;
+  text-decoration:none;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+.f-socials a:hover{
+  background:#ff8c00;
+  color:#000;
+  transform:translateY(-4px) scale(1.1); /* Moves up */
+}
+
+.f-col{
+  display:flex;
+  flex-direction:column;
+  gap:13px;
+  flex:1 1 160px;
+  min-width:160px;
+  text-decoration: dotted;
+}
+.f-col h4{
+  font-size:15px;
+  font-weight:700;
+  padding-bottom:8px;
+  border-bottom:2px solid #ff8c00;
+  width:fit-content;
+}
+.f-col a{
+  font-size:13px;
+  color:#d1d5db;
+  text-decoration: dotted;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.f-col a:hover{
+  color:#ff8c00;
+  transform:translateX(5px); /* Moves right */
+}
+.pro{
+  background:#facc15;
+  color:#000;
+  font-size:8px;
+  font-weight:800;
+  padding:2px 5px;
+  border-radius:4px;
+}
+.icon{
+  color:#ff8c00;
+  font-size:14px;
+}
+
+.f-pill{
+  max-width:1000px;
+  margin:40px auto 20px;
+  border:1px solid #374151;
+  border-radius:30px;
+  padding:10px;
+  text-align:center;
+  font-size:11px;
+  letter-spacing:4px;
+  color:#9ca3af;
+  cursor:pointer;
+  transition:0.3s;
+}
+.f-pill:hover{
+  border-color:#ff8c00;
+  color:#fff;
+  transform:scale(1.02);}
+
+.f-bottom{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  max-width:1250px;
+  margin:0 auto;
+  padding-top:20px;
+  border-top:1px solid #1f2937;
+  font-size:12px;
+  color:#6b7280;
+}
+.f-bottom-links{
+  display:flex;
+  gap:20px;
+}
+.f-bottom-links a{
+  color:#9ca3af;
+  text-decoration:none;
+  cursor:pointer;
+  transition:0.2s;
+}
+.f-bottom-links a:hover{
+  color:#ff8c00;
+}
+
+@media(max-width:768px)
+{
+  .footer-real-top{
+    flex-direction:column;
+    gap:30px;
+  }
+  .f-bottom{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- === YOUR NEW SECTION - EXPLORE PROJECTS === -->
+<div class="section">
+  <div class="section-header">
+    <h2>Explore Our Latest Projects</h2>
+    <p>Discover innovative solutions and ready-to-use code for your next project</p>
+  </div>
+
+  <div class="flex-list">
+
+    <!-- Card 1 - Netflix Dashboard -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Downloads\6image.jpeg">
+        <span class="tag">Management</span>
+        <span class="heart">💙 0</span>
+        <span class="price-badge">🔒 $179.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Social Media Dashboard</h3>
+        <p>A comprehensive social media management dashboard for scheduling posts, analytics, and multi-platform...</p>
+        <div class="stats"><span>⬇ 2,760</span><span>⭐ 4.8</span><span>👁 145</span></div>
+        <div class="tech"><span>React</span><span>Python</span><span>PostgreSQL</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 2 - Real Estate -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Downloads\7image.jpeg">
+        <span class="tag">Other</span>
+        <span class="heart">💙 1</span>
+        <span class="price-badge">🔒 $399.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Real Estate Portal</h3>
+        <p>A modern real estate platform with property listings, virtual tours, agent management, and mortgage...</p>
+        <div class="stats"><span>⬇ 1,340</span><span>⭐ 4.6</span><span>👁 67</span></div>
+        <div class="tech"><span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 3 - Fitness -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Downloads\8.jpeg">
+        <span class="tag">Entertainment</span>
+        <span class="heart">💙 0</span>
+        <span class="price-badge">🔒 $89.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Fitness Tracking App</h3>
+        <p>A comprehensive fitness application with workout tracking, nutrition planning, progress analytics, and...</p>
+        <div class="stats"><span>⬇ 5,230</span><span>⭐ 4.7</span><span>👁 278</span></div>
+        <div class="tech"><span>Flutter</span><span>Firebase</span><span>Node.js</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 4 - Restaurant Booking System -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Downloads\12image.jpeg">
+        <span class="tag">Other</span>
+        <span class="heart">💙 0</span>
+        <span class="price-badge">🔒 $129.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Restaurant Booking System</h3>
+        <p>A restaurant reservation and table management system with online booking,customer management,and analytics.</p>
+        <div class="stats"><span>⬇ 1,980</span><span>⭐ 4.4</span><span>👁 92</span></div>
+        <div class="tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 5 - Online Learning Platform -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Downloads\9image.jpeg">
+        <span class="tag">Education</span>
+        <span class="heart">💙 1</span>
+        <span class="price-badge">🔒 $349.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Online Learning Platform</h3>
+        <p>A complete online learning management system with course creation, video streaming,quizzes,and student progress tracking.</p>
+        <div class="stats"><span>⬇ 2,890</span><span>⭐ 4.8</span><span>👁 167</span></div>
+        <div class="tech"><span>Vue.js</span><span>Laravel</span><span>MySQL</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 6 - Inventory Management System -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Downloads\10image.jpeg">
+        <span class="tag">Management</span>
+        <span class="heart">💙 0</span>
+        <span class="price-badge">🔒 $249.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Inventory Management System</h3>
+        <p>comprehensive inventory management solution for businesses with stock tracking, supplier management, and sales analytics.</p>
+        <div class="stats"><span>⬇ 1,670</span><span>⭐ 4.5</span><span>👁 78</span></div>
+        <div class="tech"><span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 7 - OnyeDON Business System -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Pictures\WhatsApp Image 2026-09-29 at 12.37.08 AM.jpeg">
+        <span class="tag">Business Management</span>
+        <span class="heart">💙 0</span>
+        <span class="price-badge">🔒 $276.99</span>
+      </div>
+      <div class="card-info">
+        <h3>OnyeDON Business Media Dashboard</h3>
+        <p>A comprehensive business media management dashboard for scheduling posts, analytics, and multi-platform...</p>
+        <div class="stats"><span>⬇ 3,780</span><span>⭐ 4.9</span><span>👁 145</span></div>
+        <div class="tech"><span>React</span><span>Python</span><span>MySQL</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 8 - website building -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\Pictures\good work.jpeg">
+        <span class="tag">great</span>
+        <span class="heart">💙 1</span>
+        <span class="price-badge">🔒 $599.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Building Amazing clean websites </h3>
+        <p>A modern and Amazing websites for businesses and many other web design</p>
+        <div class="stats"><span>⬇ 6,340</span><span>⭐ 6.6</span><span>👁 867</span></div>
+        <div class="tech"><span>Next.js</span><span>Django</span><span>MySQL</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+
+    <!-- Card 9 - clean code -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="c:\Users\USER\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\8EC3696743F1DA3231A1C82F2FC4B9D2CFB4FB4C\transfers\2026-43\WhatsApp Image 2026-10-21 at 2.57.31 PM.jpeg">
+        <span class="tag">App Development</span>
+        <span class="heart">💙 0</span>
+        <span class="price-badge">🔒 $89.99</span>
+      </div>
+      <div class="card-info">
+        <h3>Clean Coding And App Development</h3>
+        <p>A comprehensive of a good application with workout tracking, nutrition planning, progress analytics, and a good clean coding easy to understand and so on.</p>
+        <div class="stats"><span>⬇ 5,830</span><span>⭐ 5.7</span><span>👁 768</span></div>
+        <div class="tech"><span>MySQL</span><span>Firebase</span><span>Node.js</span><span>+2</span></div>
+        <a class="view" href="#">View Details →</a>
+      </div>
+    </div>
+  
+    <!-- === AT THE END === -->
+<div class="end-section">
+  <a href="https://patterncoding.com/marketplace" class="btn-all">View All Projects →</a>
+  
+  <div class="badge-end"><span class="dot"></span> EVERYTHING IN ONE PLACE</div>
+  
+  <div class="everything">
+    <h2>Everything You Need</h2>
+    <p>A complete ecosystem for developers to learn, build, collaborate, and grow together.</p>
+  </div>
+  </div>
+<!-- === BRIGHTCODING FOOTER === -->
+<footer class="footer-real">
+  <div class="footer-real-top">
+
+    <!-- 1. BRAND -->
+    <div class="f-brand">
+      <div class="f-logo"><span class="f-logo-icon"><img class="logo1" src="c:\Users\USER\Downloads\patterncoding logo.png" alt="">
+</span> BRIGHTcoding</div>
+      <p>Empowering developers from zero to hero with structured learning paths, mentorship, practical projects, and powerful developer tools.</p>
+      <div class="f-tag"><span>◆ ◆</span> LEARN - BUILD - BECOME</div>
+      <div class="f-socials">
+        <a href="#">f</a>
+        <a href="#">𝕏</a>
+        <a href="#">in</a>
+        <a href="#">◎</a>
+        <a href="#">♪</a>
+        <a href="#">◉</a>
+        <a href="#">▶</a>
+      </div>
+    </div>
+
+    <!-- 2. LEARNING PATHS -->
+    <div class="f-col">
+      <h4>Learning Paths</h4>
+      <a href="#"> 1. Frontend Development <span class="pro">PRO</span></a>
+      <a href="#">2. Frontend Interview Mastery <span class="pro">PRO</span></a>
+      <a href="#">3. Backend Development <span class="pro">PRO</span></a>
+      <a href="#">4. Full Stack Development <span class="pro">PRO</span></a>
+      <a href="#">5. Python Programming <span class="pro">PRO</span></a>
+      <a href="#">6. Data Science <span class="pro">PRO</span></a>
+      <a href="#">7. Machine Learning <span class="pro">PRO</span></a>
+      <a href="#">8. Artificial Intelligence <span class="pro">PRO</span></a>
+    </div>
+
+    <!-- 3. RESOURCES -->
+    <div class="f-col">
+      <h4>Resources</h4>
+      <a href="#">1. Docs</a>
+      <a href="#">2. Blog</a>
+      <a href="#">3. Community</a>
+      <a href="#">4. Mentorship</a>
+      <a href="#">5. Pricing</a>
+      <a href="#">6. About</a>
+    </div>
+
+    <!-- 4. STAY CONNECTED -->
+    <div class="f-col">
+      <h4>Stay Connected</h4>
+      <a href="mailto:support@patterncoding.com"><span class="icon">✉</span> support@patterncoding.com</a>
+      <a href="tel:+2347086083470"><span class="icon">☎</span> +234 7086083470</a>
+      <a href="#"><span class="icon">📍</span> Ebonyi, Nigeria</a>
+    </div>
+
+  </div>
+
+  <!-- BRIGHTCODING PILL -->
+  <div class="f-pill">✦ &nbsp; BRIGHTCODING &nbsp; ✦</div>
+  <!-- BOTTOM -->
+  <div class="f-bottom">
+    <p>© 2026 BRIGHTcoding. All rights reserved.</p>
+    <div class="f-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+      <a href="#">Security</a>
+    </div>
+    <p>Built with <span style="color:#ff5a5a">♥</span> for developers</p>
+  </div>
+</footer>
+
+</body>
+</html>
